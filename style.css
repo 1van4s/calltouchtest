@@ -1,0 +1,94 @@
+/*.preloader{
+border: 2px solid #eae4ea;
+width: 150px;
+height: 150px;
+border-radius: 50%;
+ box-shadow: 0 -2px 2px rgba(0,0,0,.2);
+ border-bottom: 2px solid #6ddfca;
+}
+*/
+.container-main{
+width: 100%;
+height: 700px;
+border: 2px solid black;
+display: flex;
+justify-content: center;
+transition: all 1.5s ease;
+}
+.child-container{
+margin-top: 70px;
+height: 500px;
+width:  500px;
+box-shadow: 19px 12px 10px 2px rgba(34, 60, 80, 0.2);
+transition: all 1.5s ease;
+}
+.child-container:hover{
+background: url(blob.svg) 55% 70% no-repeat;
+background-size: 700px; 
+}
+.inputField{
+margin-top: 50px;
+text-align: center;
+}
+.inputField input{
+border: 2px solid #fcd1ce;
+border-radius: 25px;
+width: 200px;
+height: 35px;
+text-align: center;
+}
+.inputField input:focus{
+outline: none;
+}
+.inputField2{
+margin-top: 50px;
+text-align: center;
+}
+
+.inputField2 input{
+border: 2px solid #fcd1ce;
+border-radius: 25px;
+width: 200px;
+height: 35px;
+text-align: center;
+}
+.inputField2 input:focus{
+outline: none;
+}
+.buttons{
+margin-top: 30px;
+text-align: center;
+}
+.buttons input{
+color: black;
+border: none;
+background: #fcd1ce;
+border-radius: 15px;
+margin-left: 10px;
+width: 45px;
+height: 25px;
+transition: all 500ms ease;
+}
+.buttons input:hover{    
+background: rgba(0,0,0,0);
+color: #fcd1ce;
+box-shadow: inset 0 0 0 3px #fcd1ce; 
+}
+.buttons input:active{
+width: 50px;
+height: 30px;
+}
+.outputResult{
+text-align: center;
+margin-top: 65px;
+}
+.outputResult input{
+border: 2px solid #fcd1ce;
+text-align: center;
+border-radius: 25px;
+width: 200px;
+height: 35px;
+}
+.outputResult input:focus{
+outline: none;
+}

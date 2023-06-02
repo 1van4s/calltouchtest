@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+   <div class="container-main">
+   <div class="preloader"></div>
+   <div class="child-container">
+   <form class="inputField">
+    <input id="firstNumber"type="text" placeholder="Введите первое число">   
+   </form>
+    <form class="inputField2">
+    <input id="secondNumber"type="text" placeholder="Введите второе число"> 
+   </form>
+    <form class="buttons">
+     <input type="button" id="+" value="+" onclick="calculatingNumber('+')">
+     <input type="button" id="-" value="-" onclick="calculatingNumber('-')">
+     <input type="button" id="*" value="*" onclick="calculatingNumber('*')">
+     <input type="button" id="/" value="/" onclick="calculatingNumber('/')">
+    </form>
+    <form class="outputResult">
+    <input id="result" placeholder="Тут будет результат" onclick="calculatingNumber()">
+    </form> 
+   </div>
+   </div>
+   <script>
+const calculatingNumber = (operators) => {
+let result;
+let firstNumbers = Number(document.getElementById('firstNumber').value);
+let secondNumbers = Number(document.getElementById('secondNumber').value);
+switch(operators) {
+    case '+':
+    result = firstNumbers + secondNumbers;
+    break;
+    case '-':
+    result = firstNumbers - secondNumbers;
+    break;
+    case '*':
+    result = firstNumbers * secondNumbers;
+    break;
+    case '/':
+    result = firstNumbers / secondNumbers;
+    break;
+}
+  document.getElementById('result').value = result;  
+}
+    </script>
+</body>
+</html>
